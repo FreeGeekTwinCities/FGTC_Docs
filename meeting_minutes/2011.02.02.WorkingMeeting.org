@@ -1,4 +1,3 @@
-
 ** Require donation for printers?
    Jeff: net loss (many/most being recycled)
    Peter: maybe $20 for whole donation
@@ -42,5 +41,3 @@
    Checklist of things you've accomplished - help people get (re-)started?
    Jeff/Cynthia: Make it like a workout? "This week I learned to..." with sample tasks/"vocabulary"
    Peter: first day, just tear-down (not for rebuilding?)
-   
-** TODO [#C] White cheddar popcorn!

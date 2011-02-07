@@ -1,0 +1,67 @@
+* Is hardware reusable?
+** Is is a computer (or a computer accessory)?
+*** Is it clearly one of the items we DON'T accept (TV, non-mobile telephone)? -- if so, we can't accept it!
+** If it's a computer, is it new (or nearly so)?
+*** Check for a processor “badge”
+**** New: Pentium 4, Centrino
+**** Old: Pentium III, II, Pro...
+**** Hard to tell: Athlon, Celeron
+*** “Designed for Windows...”
+**** New: XP, Vista
+**** Older: ME, 2000
+**** Oldest (probably recycle): 95, 98, NT
+*** Check the ports on the back:
+**** If it has USB, it's newer
+**** Computers with NO round keyboard/mouse ports usually newest
+*** If it's a Mac (has an Apple logo)
+**** Beige = old, recycle it
+**** Silver or colored: look for Firewire (house-shaped) ports
+***** No Firewire = recycle
+***** If it says G4 or G5, keep
+** Monitors
+*** Keep any LCDs (“flat-panel”) in elevator room
+*** Take in CRTs, but '''$20 donation is mandatory!'''
+**** Keep in garage
+**** CRTs older than ~2000 or smaller than 15” are recycled automatically
+**** Recycle extra CRTs by oldest/smallest
+**** Keep “nice” CRTs
+***** Sony/Trinitron
+***** “flat-screen” (e.g. screen does not bulge out)
+** If it's a peripheral (computer-related)
+*** Keyboards -- check connectors
+**** Keep: USB (flat) or PS/2 (small, round, often purple) connectors
+**** Recycle: AT (large round)
+*** Separate wireless keyboards/mice
+*** Mice – check connector & look underneath
+**** Keep USB and/or optical mice (those with lens underneath)
+**** Recycle old (“ball”) mice
+*** Network cards – keep “fast” Ethernet (usually has “10/100” light)
+*** Modems (internal or external): recycle
+*** Graphics cards: keep for now, unless obviously very old (then recycle with circuit boards)
+*** Printers
+**** Keep: laser printers, multi-function (scan/print)
+**** Recycle: dot-matrix, inkjets WITHOUT USB
+*** Scanners: keep for now
+*** 
+* If it's a reusable computer:
+** Remove hard drives ASAP and lock up or DBAN (both at 3405 for now – take over or put in turquoise bins bound for 3405)
+** Reusable hardware goes by “back” wall or in elevator room
+* If hardware's not reusable...
+** Recyclable hardware should be labeled (e.g. large black “R” in permanent marker)
+*** Disassembled by new builders
+*** Materials sorted
+**** circuit boards go to MPC
+**** plastics go to...
+**** metal goes in box or out behind PPNA for pickup by...
+* Receipts
+** receipt book should be in cashbox
+* Donations
+** Donations are '''required''' for CRTs due to recycling costs
+** All other donations are optional
+** Suggested donations are posted on garage door
+** Money goes in cash box
+*** Should be on workbench
+*** Ask a “keyholder” if it's locked!
+
+
+

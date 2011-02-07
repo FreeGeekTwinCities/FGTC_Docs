@@ -1,0 +1,47 @@
+* Stage 1: teardown of recyclable computers to learn parts and how they go together (1-2 times or until participant is comfortable with parts ID)
+** refer to posted diagrams and ask staff if help is needed id'ing parts
+*** list of parts? Put parts list in appendix?
+** process
+*** unplug cables...
+*** list out suggested steps? Need diagrams?
+* Stage 2: teardown and reconstruction of a known-to-be-working computer with no 'issues'
+** repeat Stage 1 and reverse process – plug it in – does it work?
+* Stage 3: construct a working computer from parts stacked in the garage
+** Collect necessary parts:
+*** “Stripped” computer (case, power supply, motherboard)
+*** “Clean” hard drive, >20 GB
+*** Appropriate RAM (see RAM identification chart...), at least 512 MB
+*** Optical drive(s) – at least CD-R, if possible, or DVD?
+*** IDE cable(s) for the above
+*** Floppy drive(s), if computer originally included
+*** If not included on motherboard:
+**** sound
+**** video
+**** network (Ethernet)
+** Install parts
+*** seat RAM
+*** insert cards
+*** install drives
+**** set hard drive to Master; install on first/primary “channel” -- if motherboard has blue port use 80-pin (blue) IDE cable
+**** if one optical (CD or DVD) drive, set to Slave; install on same channel as HD
+**** if 2+ optical drives, put on separate (secondary) channel/cable from hard drive; set one to Master, one to slave
+**** floppy & floppy cable (the one with a “twist”)
+*** connect keyboard & mouse
+*** power
+*** Boot to BIOS
+**** When first turning on computer, hit indicated key (“press X for setup”), Delete and/or do “F key dance” (e.g. press F1, F2, etc.)
+**** Make sure date/time are correct – if not, motherboard battery may be bad, and errors may occur during installation
+**** Check to see if:
+***** drives are detected
+***** booting from optical disc is enabled
+**** exit BIOS, saving any changes
+*** insert Ubuntu CD-ROM (10.04.1?)
+**** run Memtest
+**** if prompted, hit F4 and choose “OEM installation” (if not, install '''oem-config-gtk''' later and run '''Prepare for End User''' or '''oem-config-prepare''')
+***** use entire disk
+***** username: '''oem'''
+***** password: '''freegeek'''
+**** reboot & verify that everything looks OK
+**** download & install available updates
+**** if install has issues, reboot to CD and run '''verify'''
+

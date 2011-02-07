@@ -1,0 +1,46 @@
+
+** Require donation for printers?
+   Jeff: net loss (many/most being recycled)
+   Peter: maybe $20 for whole donation
+   Owen: since CRTs cost ~$20 already, might become net loss again
+** Start encouraging people to take machines they've earned?
+   Peter: may be good, in that it helps volunteers, and helps us fulfill our mission
+** Recyclable prices - Feb. 2010
+   | Commodity       | Price/Lb. | Vendor             |
+   |-----------------+-----------+--------------------|
+   | Power Supplies  | $.10      | WM Recycle America |
+   | Circuit Boards  | $1.50     | WM Recycle America |
+   | Hard Drives     | $.20      | WM Recycle America |
+   | Laptops (whole) | $.15      | WM Recycle America |
+   | CRTs            | -$.15     | WM Recycle America |
+   | Insulated Wire  | $.7-.9    | Leder Bros.        |
+** Five States of Hardware
+*** Initial Intake
+    remove HD!
+    some recording?
+*** POSTs
+    Owen: once POSTed, moves to Ready for Build
+*** Needs Troubleshooting
+    for advanced volunteers?
+*** RIP/Recycle
+    shouldn't leave garage?
+*** Ready for Build
+    goes in "hose room", along with build-related supplies (keyboards, mice, displays)
+    Peter: "carcass" that includes: case, motherboard, power supply
+    Owen: remove HD, optical drives, memory; replace with known-good (ideally) when building
+    put name/date on in-progress 
+*** Known Good Build (and Build In Progress?)
+    "hose room"?
+*** Empty Cases
+** Focus for February?
+*** Hardware sorting (garage & hose room)?
+*** Laptops?
+** Chaos!
+   Peter: help get people to "move up pyramid"
+   Cynthia: need specific tasks
+   Zoey: pair up ("apprentice"?) - problem: volunteer/"staff" ratio
+   Checklist of things you've accomplished - help people get (re-)started?
+   Jeff/Cynthia: Make it like a workout? "This week I learned to..." with sample tasks/"vocabulary"
+   Peter: first day, just tear-down (not for rebuilding?)
+   
+** TODO [#C] White cheddar popcorn!

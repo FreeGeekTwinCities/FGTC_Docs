@@ -1,9 +1,9 @@
-Minutes of 10/13/2010 Board Meeting
+*Minutes of 10/13/2010 Board Meeting*
 
-7:20 Owen Jones, chair, convened.
-7:21 Owen motioned to approve bylaws, Jeff seconded; motion carried.
-7:24 Brian motioned to approve opening bank account in Free Geek Twin Cities' name at City County Federal Credit Union, Owen seconded; motion carried.
-7:26 Jeff motioned to adjourn, Owen seconded; motion carried.
+* <2010-10-13 19:20> Owen Jones, chair, convened.
+* <2010-10-13 19:21> Owen motioned to approve bylaws, Jeff seconded; motion carried.
+* <2010-10-13 19:24> Brian motioned to approve opening bank account in Free Geek Twin Cities' name at City County Federal Credit Union, Owen seconded; motion carried.
+* <2010-10-13 19:26> Jeff motioned to adjourn, Owen seconded; motion carried.
 
 Brian Dunnette, Secretary/Treasurer
 10/13/2010

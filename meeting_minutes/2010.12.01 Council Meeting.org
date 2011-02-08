@@ -72,4 +72,5 @@ Amanda may be willing to help teach; may also have bilingual (Rob?) volunteer wi
 
 Also: we'll be closed 12/25 and 1/1!
 
-* TODO Look into hardware for classes (maybe iMacs for LTSP?); Brian needs to set up tracking (Tryton!!!)
+* TODO Look into hardware for classes (maybe iMacs for LTSP?)
+* TODO Brian needs to set up tracking (Tryton!!!)

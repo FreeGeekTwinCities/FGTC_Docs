@@ -1,0 +1,61 @@
+* General Meeting
+  SCHEDULED: <2009-10-17 Sat>
+** Present: Alan, Joe, Tom, Brian, Amanda, Jeff, Taylor, Andy, Steve, Ben 
+** Agenda:
+***  Donations
+****  Receipts
+**** Requested donations?
+***  Timeline
+*** Keys    
+*** Wireless (Steve?)
+*** 501c3 status
+** Minutes
+***  Timeline/Space
+
+****  Waiting for:
+*****  Wall to separate space
+***** Flooring
+******  Jamie has flooring, may be able to lay ourselves
+*****    ~6 weeks before space is "finished" (around Dec. 1?)
+***** May be able to frame wall ourselves?
+******  Tom, Andy have experience?
+****** Check with Jamie if this is OK
+*****  Tom can get plywood for shelving
+***** May want to wait until flooring is in to install shelves
+
+***   Receipts
+****  Burden may be on donor as to value
+**** We give general itemization (e.g. "computer equipment"?)
+**** Collect contact info (in case of problems?)
+**** How is fiscal sponsor involved?
+**** May need more documentation for business donations?
+*****  Wait until 501c3 to take business donations?
+****  Talk to TwinCitiesMediaAlliance!
+
+*** 501c3
+
+****  Status: Tom's sister: "Looks pretty good", needs to look over further
+**** Send out to list (staff?) in case anyone has non-profit legal contacts
+**** Resources from MinnesotaCouncilForNonprofits? May be able to recommend lawyer to look over application?
+**** $300 application fee -- need to find way to defray costs?
+**** Find someone within ~1 week (send out by end of October?)
+
+*** Internet Access
+****  Steve working on application for free WirelessMinneapolis account
+**** May want to share building connection in future
+**** Will USI account provide enough bandwidth for us (downloading distros, VoIP, etc.)?
+
+***    Thrift Store
+****  Go for Portland model (standardized system, ~$50 price)?
+**** Need to have training when system goes out
+*****  Joe: largely dealt with through volunteer programs -- people will volunteer on computers similar to those they'll be getting
+****  Provide low-cost/free class when selling systems?
+**** Younger volunteers/buyers may be tech-savvy
+
+***  Website
+****  Should we move to separate, TCOC/FGTC-owned Dreamhost account?
+*****  Alan will work on
+****  Can we get free Dreamhost non-profit account?
+*****  May require 501c3
+****  Sharing passwords -- what's best way to store/share?
+**** Tom setting up Twitter account -- http://twitter.com/freegeektc?

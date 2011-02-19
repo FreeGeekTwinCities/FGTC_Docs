@@ -21,12 +21,15 @@
    Source: "Households" in Minnesota
 
    Device types:
-   + "Video display devices" (VDD)
-   + Computers
-   + Peripherals (includes keyboard, printer, or any other device sold exclusively for external use with a computer that provides input or output into or from a computer)
-   + Facsimile machines (FAX)
-   + DVD players
-   + Video cassette recorders (VCRs)
+   * "Video display devices" (VDD)
+   * Computers
+   * Peripherals, including:
+     * keyboard
+     * printer
+     * any other device sold exclusively for external use with a computer that provides input or output into or from a computer)
+   * Facsimile machines (FAX)
+   * DVD players
+   * Video cassette recorders (VCRs)
 
       Eligibility for sale to meet recycling obligation: CED collected in a given program year must be recycled and the pounds sold to a manufacturer before the start of the next program year (July 1).
       Do not count as CED

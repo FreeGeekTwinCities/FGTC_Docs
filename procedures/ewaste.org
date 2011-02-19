@@ -1,4 +1,4 @@
-* Minnesota EWaste Definitions (from [[http://www.pca.state.mn.us/index.php/topics/preventing-waste-and-pollution/product-stewardship/initiatives-in-minnesota/electronics/minnesota-electronics-recycling-act/vdd-and-ced.html][MN PCA]])
+* Minnesota EWaste Definitions (from [[http://www.pca.state.mn.us/zihybc1][MN PCA]])
 ** What is a video display device?
    A "video display device" (VDD) is defined in the Minnesota Electronics Recycling Act. A VDD must meet each of these criteria as defined in the law.
 

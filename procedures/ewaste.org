@@ -24,18 +24,15 @@
    * "Video display devices" (VDD)
    * Computers
    * Peripherals, including:
-     * keyboard
-     * printer
-     * any other device sold exclusively for external use with a computer that provides input or output into or from a computer)
+     - keyboard
+     - printer
+     - any other device sold exclusively for external use with a computer that provides input or output into or from a computer)
    * Facsimile machines (FAX)
    * DVD players
    * Video cassette recorders (VCRs)
 
-      Eligibility for sale to meet recycling obligation: CED collected in a given program year must be recycled and the pounds sold to a manufacturer before the start of the next program year (July 1).
-      Do not count as CED
-
-      Under Minnesota's law and program, CED are precisely defined. Here are examples which do not meet the definitions in the law and should not be reported under the Minnesota Electronics Recycling Act:
-      
+     Eligibility for sale to meet recycling obligation: CED collected in a given program year must be recycled and the pounds sold to a manufacturer before the start of the next program year (July 1).
+           
 ** What's not covered?
    + Anything collected from sources other than Minnesota household (e.g., commercial/industrial/institutional, out of state)
    + Transport packaging (pallets, boxes/gaylords)

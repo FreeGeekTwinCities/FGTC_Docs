@@ -1,0 +1,52 @@
+* Minnesota EWaste Definitions (from [[http://www.pca.state.mn.us/index.php/topics/preventing-waste-and-pollution/product-stewardship/initiatives-in-minnesota/electronics/minnesota-electronics-recycling-act/vdd-and-ced.html][MN PCA]])
+** What is a video display device?
+   A "video display device" (VDD) is defined in the Minnesota Electronics Recycling Act. A VDD must meet each of these criteria as defined in the law.
+
+   Marketed to: "Households" in Minnesota
+
+   Screen size: Greater than 9 inches, diagonally 
+
+   Device types: "Televisions" and "computer monitors"
+
+   + "televisions" include: TVs, TV-DVD/VCR combinations, monitors for home security/CCTV systems
+   + "computer monitors" include: monitors, all-in-one computers, laptop computers, eBook readers, digital picture frames, and portable DVD players
+
+** What is a covered electronic device?
+   CED: Covered electronic devices
+
+   "Covered electronic devices" (CED) are consumer electronics that can be collected, recycled, and sold as pounds to meet manufacturer recycling obligation.
+
+   A "covered electronic device" (CED) is defined in the Minnesota Electronics Recycling Act.  CED are defined in terms of source (households in Minnesota), device types, and when they are collected. CED must meet all of these criteria:
+
+   Source: "Households" in Minnesota
+
+   Device types:
+   + "Video display devices" (VDD)
+   + Computers
+   + Peripherals (includes keyboard, printer, or any other device sold exclusively for external use with a computer that provides input or output into or from a computer)
+   + Facsimile machines (FAX)
+   + DVD players
+   + Video cassette recorders (VCRs)
+
+      Eligibility for sale to meet recycling obligation: CED collected in a given program year must be recycled and the pounds sold to a manufacturer before the start of the next program year (July 1).
+      Do not count as CED
+
+      Under Minnesota's law and program, CED are precisely defined. Here are examples which do not meet the definitions in the law and should not be reported under the Minnesota Electronics Recycling Act:
+      
+** What's not covered?
+   + Anything collected from sources other than Minnesota household (e.g., commercial/industrial/institutional, out of state)
+   + Transport packaging (pallets, boxes/gaylords)
+   + Appliances
+   + Cell phones/PDAs
+   + Stereo/audio equipment
+   + Household/small electrics (i.e., toasters, vacuum cleaners)
+   + Electronic media (i.e., CD-ROMs, diskettes, cassettes, backup tapes)
+
+
+
+
+
+* Collection Reporting
+  The MN PCA requires annual reports of what registered e-waste collectors (including FGTC) collect each year, and what happens to it; reporting deadlines have generally coincided with the state's fiscal year (July-June, so reports are due at the end of June each year).
+
+  We'll usually receive a notice (e-mail?) from the PCA several months before the reporting is due; if not, there's a form (spreadsheet) to fill out and send back at the PCA's [[http://www.pca.state.mn.us/oxpg74e][Collector Reporting page]].

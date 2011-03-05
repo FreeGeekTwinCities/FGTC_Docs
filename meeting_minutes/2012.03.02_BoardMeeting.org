@@ -6,5 +6,43 @@
 ** Sunday Hours
 ** Online Sales
 ** 501c3 Application
-
 * Minutes:
+** Recycling Update
+   CLOCK: [2011-03-02 Wed 18:45]--[2011-03-02 Wed 19:07] =>  0:22
+   :PROPERTIES:
+   :ORDERED:  t
+   :END:
+   Most items go to WM, wire to Leder Bros.
+   Peter will try to update for Business Plan?
+   Now ~$16 in the black with WM (albeit before 3/2 dropoff, though this also may be net-positive)
+   The more processing we do, the more the return; however, less educational value (e.g. tearing apart "wall warts")
+   Need to keep enough transformers for usable equipment, but maybe cull anything we can't easily match to hardware?
+   Keep e.g. heat sinks separate (and other high-value metals: copper, aluminum)
+   Leder Bros. will also take steel, in conjunction with other metals
+   Need to be more organized if we're taking steel out - maybe flatten and/or put in large "tubs"?
+** Building Update
+   State of building is still in flux - no big changes likely, but possible
+   Regardless, may be best to stay "lean" for time being
+** Sunday Hours
+   Main purpose: to teach builds?
+   May not need to clean up, but could be good to keep routine (and keep things more organized)
+** Building Network
+   Haven't cleared things with PPNA, will check with LSP
+** Gaining Momentum
+   Continue to define spaces & procedures to keep equipment & volunteers moving
+   More signs! More instructions printed out!
+   Who can we get to be "super-volunteer" on e.g. recycling? Most people want to build...
+   How do we find out what people are initially good at, and track what they're learning?
+   Program (or lack thereof) may be too nebulous for build volunteers
+   What are our basic goals/expectations for builders?
+   Do we want people to just be able to put computer together, or should we try to instill knowledge of what components do and how they interact?
+   What tasks *need* to be done: e.g. greeter, build supervisor, garage supervisor
+   Maybe we need to start semi-scheduling volunteers? At least for build education tasks?
+   Good visual aid: labeled (but assembled) computer, plus components mounted to board? (Peter will try to assemble)
+** 501c3 Application
+   Mostly need to flesh out business plan (e.g. recycling section), then have lawyer review
+** Online Sales
+   Try to clear out some basement stuff to make space for storing items for online sale
+** What To Keep, What To Sell
+   LCDs sell, but should we simply recycle some? Maybe check for power supplies, then sell those without power as-is?
+   Try to reduce stock of hardware around May Day? 

@@ -2,8 +2,7 @@
 It's a place to store documents for Free Geek Twin Cities -- primarily work-in-progress stuff, since anything polished or public should nominally be at [[http://freegeektwincities.org]]
 
 * What's here?
-** [[./meeting_minutes][Meeting Minutes]]
-** [[./procedures][Procedures]]
-** [[./issues][Issues]]
-** [[./scripts][Useful Scripts]]
-** [[./erp][ERP System Info]]
+** [[procedures/][Procedures]]
+** [[recycling/][Recycling Info]]
+** [[meeting_minutes/][Meeting Minutes]]
+** [[scripts/][Useful Scripts]]

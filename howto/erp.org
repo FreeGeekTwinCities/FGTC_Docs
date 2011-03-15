@@ -18,6 +18,6 @@ For more specific server setup guides, check: http://code.google.com/p/tryton/wi
 Debian's README (which outlines creating an appropriate database/user, etc.) and init script are attached.
 
 ** Server Modules
-To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its Google Code page here: [[http://code.google.com/p/tryton-ucoa/]]
+To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its [[http://tryton-ucoa.googlecode.com/][Google Code page]].
 
 Once the files have been downloaded (either the tar.bz2 file, or via Mercurial), copy/move the entire tryton-ucoa directory into the server's module directory (e.g. /usr/local/lib/python2.6/dist-packages/trytond-1.8.2-py2.6.egg/trytond/modules), being sure to rename it to *account_ucoa*.

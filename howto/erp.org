@@ -1,12 +1,11 @@
 * Getting Started
-We use the Tryton ERP system (http://tryton.org) to manage internal information (or will, once [[mailto:brian@freegeektwincities.org][Brian]] gets his act together!)
+We use the [[http://tryton.org][Tryton ERP system]] to manage internal information (or will, once [[mailto:brian@freegeektwincities.org][Brian]] gets his act together!)
 
-The server component runs on a Dell PowerEdge server (located in the "server closet), and was installed via Python's easy_install script (since [[http://pypi.python.org/pypi/trytond/][Tryton in PyPI]] is much more current than [[http://packages.ubuntu.com/lucid/tryton-server][Tryton in Ubuntu's repositories]]); however, since dependencies are largely unchanged from Tryton 1.4 to 1.8, supporting packages (e.g. python-lxml) are still best installed via dpkg/apt-get.
+The server component runs on a Dell PowerEdge server (located in the "server closet), and was installed via Python's easy_install script (since [[http://pypi.python.org/pypi/trytond/][Tryton in PyPI]] is much more current than [[http://packages.ubuntu.com/lucid/tryton-server][Tryton in Ubuntu's repositories]] -- 1.8.2 vs. 1.4.3, as of <2011-03-15 Tue>!); however, since dependencies are largely unchanged from Tryton 1.4 to 1.8, supporting packages (e.g. python-lxml) are still best installed via dpkg/apt-get.
 
-For clients (those who simply want to connect to the server), you can simply install Debian's tryton-client_1.8 package: http://mirror.cs.umn.edu/debian/pool/main/t/tryton-client/tryton-client_1.8.1-1_all.deb 
+For clients (those who simply want to connect to the server), you can simply install Debian's tryton-client_1.8 package: [[http://mirror.cs.umn.edu/debian/pool/main/t/tryton-client/tryton-client_1.8.1-1_all.deb][http://mirror.cs.umn.edu/debian/pool/main/t/tryton-client/tryton-client_1.8.1-1_all.deb]] 
 
 * Setup
-
 ** Server Configuration						     :ATTACH:
   :PROPERTIES:
   :Attachments: tryton-server.README.Debian tryton-server.init
@@ -19,6 +18,6 @@ For more specific server setup guides, check: http://code.google.com/p/tryton/wi
 Debian's README (which outlines creating an appropriate database/user, etc.) and init script are attached.
 
 ** Server Modules
-To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its Google Code page here: http://code.google.com/p/tryton-ucoa/
+To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its Google Code page here: [[http://code.google.com/p/tryton-ucoa/]]
 
 Once the files have been downloaded (either the tar.bz2 file, or via Mercurial), copy/move the entire tryton-ucoa directory into the server's module directory (e.g. /usr/local/lib/python2.6/dist-packages/trytond-1.8.2-py2.6.egg/trytond/modules), being sure to rename it to *account_ucoa*.

@@ -1,5 +1,5 @@
 * Getting Started
-We use the [[http://tryton.org][Tryton ERP system]] to manage internal information (or will, once [[mailto:brian@freegeektwincities.org][Brian]] gets his act together!)
+We use the [[http://tryton.org/][Tryton ERP system]] to manage internal information (or will, once [[mailto:brian@freegeektwincities.org][Brian]] gets his act together!)
 
 The server component runs on a Dell PowerEdge server (located in the "server closet), and was installed via Python's easy_install script (since [[http://pypi.python.org/pypi/trytond/][Tryton in PyPI]] is much more current than [[http://packages.ubuntu.com/lucid/tryton-server][Tryton in Ubuntu's repositories]] -- 1.8.2 vs. 1.4.3, as of <2011-03-15 Tue>!); however, since dependencies are largely unchanged from Tryton 1.4 to 1.8, supporting packages (e.g. python-lxml) are still best installed via dpkg/apt-get.
 

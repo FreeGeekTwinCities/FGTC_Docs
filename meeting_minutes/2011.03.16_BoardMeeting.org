@@ -1,0 +1,86 @@
+* Present:
+Jeff Wechter, Owen Jones, Andy Berhow, Robert Ruenitz, Peter Scheie, Brian Dunnette
+* Agenda:
+** Tools to buy?
+** Garage sale
+** Sunday hours
+** Inkjet and scanner takeaparts
+** Laptops: minimum standards, how to get them out to volunteers
+** How to keep new volunteers occupied 
+* Minutes:
+** Tools
+   CLOCK: [2011-03-16 Wed 19:01]--[2011-03-16 Wed 19:18] =>  0:17
+   Teardown: many rarely-used tools, but need more of commonly-used
+   ~10 "full" toolkits with e.g. flat & Philips screwdrivers
+   A few (5-10) multi-bit sets (with Torx, Security Torx, etc.)
+   1-2 Small pry-bars (~8-12"?)
+   1-2 Small (3-4 lb.?) striking/sledgehammer
+   Peter will check Menards; Jeff will check dollar stores?
+** Other supplies
+   Peter will get masking tape using Staples credit
+** Sundays
+   Need to OK with PPNA, otherwise ready to try out ~1-6 PM, chiefly for builds
+** Network
+   Need OK from PPNA?
+** Garage Sale
+   SCHEDULED: <2011-05-07 Sat>
+   Maybe do outreach at May Day, then have Garage Sale the following week (5/7-5/8)?
+   How to promote? Flyers, post on site, mention at May Day...
+   Maybe ready LCDs with external power supplies for sale (or sell cheap, as-is?)
+*** Garage Sale Prep
+    SCHEDULED: <2011-04-30 Sat>
+    Mostly sold systems, LCDs, speakers...?
+    Maybe offer items we have surplus of (scanners?) very cheap or free?
+** Business Cards
+   Check with Zoey; try to get ~1000, since last 1k lasted ~1 year?
+** Take-aparts/Freeing up space
+   Get easily-removed components off e.g. printers to free up garage space
+   Try to move to using basement space for items bound for thrift store, garage sale, or online sales
+   Chip away at backlog currently in basement
+   Get desks from hall to Ben Egerman
+   Peter building shelves for hall; can keep using non-Youth Farm shelves as well
+** Laptops
+   CLOCK: [2011-03-16 Wed 19:44]--[2011-03-16 Wed 19:48] =>  0:04
+   Get some ready for garage sale?
+   Seem to be in demand among volunteers, as well - stick with voucher (equal to desktop price), then volunteer can pay remainder?
+*** Other options for getting laptop?
+    IBM all-in-one
+    Fix up "problem" laptop (e.g. bad screen)
+    Laptop with bad battery
+    Laptop with bad screen, plus especially small (less saleable) LCD
+** Thrift Store
+   It Takes a Village still working on licensing
+   Will plan to sell e.g. cheap cables
+   Maybe have Ubuntu system for demonstration
+** Vouchers
+   What are our limits on voucher use?
+   Maybe limit each volunteer to one system/voucher every 6 months
+   Allow voucher sale of items we'd otherwise sell at garage sale
+   Keep "sale buffer" - allow volunteers to buy from this stock
+   Low-stock items needed for operation/builds (e.g. Rambus, DDR2)
+   Make list of "off-limits" items, and/or tag as such (both for volunteers & garage sale)
+   Regularly for sale:
+   | Description             | Regular Price |
+   |-------------------------+---------------|
+   | LCD (~17")              | $50           |
+   | DDR1 RAM                |               |
+   | Hard Drives (10-80 GB?) |               |
+   
+   Not for sale:
+   + Tools
+   + USB hard drive adapters
+   + PCI video
+   + 80+ GB hard drives?
+   + DDR2 RAM
+   + Rambus RAM
+   + Non-orphan power adapters
+
+** For Saturday
+*** Optical Drive Testing
+*** Start on laptops
+*** Clean up intake/test stations
+*** Intake procedure for monitors (plug in to known-working system?)
+*** Sort items in "hose room"?
+*** Dating of works-in-progress
+*** Keep ironing out (formalizing?) build process; work on "three-tier" instruction system (staff helps "super-volunteers", who help newer volunteers)
+*** Separate PDAs and phones; maybe match to power supplies?

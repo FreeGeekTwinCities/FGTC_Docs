@@ -13,8 +13,8 @@
 #			a complete ERP software.
 ### END INIT INFO
 
-PATH="/sbin:/bin:/usr/sbin:/usr/bin"
-DAEMON="/usr/bin/trytond"
+PATH="/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin"
+DAEMON="/usr/local/bin/trytond"
 
 test -x "${DAEMON}" || exit 0
 

@@ -1,0 +1,13 @@
+* Build room computers can't fetch updates!
+
+  This is usually due to a change in routing tables (by network-manager?) -- normally, if you type [[shell:route -n]], you should see a "default" route (at the bottom) like the following:
+
+  =0.0.0.0         10.0.1.1        0.0.0.0         UG    0      0        0 wlan0=
+
+  However, this is sometimes changed to:
+
+  =0.0.0.0         10.0.1.1        0.0.0.0         UG    0      0        0 eth0=
+
+  To correct this:
+  1. [[shell:sudo route del default]]
+  2. [[shell:sudo route add default gw 10.0.1.1 wlan0]]

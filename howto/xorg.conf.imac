@@ -1,0 +1,35 @@
+Section "InputDevice"
+	Identifier "Generic Keyboard"
+	Driver "kbd"
+	Option "XkbRules" "xorg"
+	Option "XkbModel" "pc105"
+	Option "XkbOptions" "lv3:lwin_switch"
+EndSection
+
+Section "InputDevice"
+	Identifier "Configured Mouse"
+	Driver "mouse"
+EndSection
+
+Section "Device"
+	Identifier "Configured Video Device"
+	BusID "PCI:0:18:0"
+	Option "UseFBDev" "false"
+EndSection
+
+Section "Monitor"
+	Identifier "Configured Monitor"
+	HorizSync 58-62
+	VertRefresh 75-117
+EndSection
+
+Section "Screen"
+	Identifier "Default Screen"
+	Monitor "Configured Monitor"
+EndSection
+
+Section "Module"
+	Disable "glx"
+	Disable "dri"
+EndSection
+

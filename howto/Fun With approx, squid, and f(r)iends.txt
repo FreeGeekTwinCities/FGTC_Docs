@@ -1,0 +1,124 @@
+Ron Schreiner <rezphreak@hotmail.com> 	Fri, Feb 12, 2010 at 10:03 AM
+Reply-To: ron@roadie.net
+To: FGTC Staff Mailing List <staff@lists.freegeektwincities.org>
+All,
+
+I spoke to Vagrant from FG in Portland and I asked how they have their deal setup for doing installs. He said that they don't use an apt-cache server, but instead use the methodology below because then that way they don't have to change the /etc/apt/sources.list on installs, and it finds the repos dynamically.
+
+They also have their own repo for FG, which I've added to my own machine. We may want to do that because let's say we include videos, PDFs, documents etc with our systems, if we wanted to update those, all of our machines that went send out, could have a:
+
+deb http://apt.freegeektwincities.org ubuntu fgtc main
+
+in the /etc/apt/sources.list. (fgtc would be in place of the distro ala jaunty, karmic, etc, since these docs would not be release-specific like hardy, jaunty, karmic, etc)
+
+Thoughts?
+
+I know this is a ways off, so file this email under a "to look at in a couple of months from now" deal, but as we setup the network and do installs, we may want to do this if at all possible.
+
+Ron
+
+> Date: Wed, 10 Feb 2010 14:29:42 -0800
+> To: Ron
+> Subject: transparent fun with approx, squid and freinds
+> From: vagrant
+
+> note: this is an old email, but i think the information is still basically
+> valid for debian lenny. probably would work on ubuntu as well.
+>
+> so, i've tried this with squid and jesred from etch, and approx from
+> etch-backports.
+>
+> apt-get install squid jesred
+>
+> apt-get -t etch-backports install approx
+>
+>
+> setting up jesred is pretty simple:
+>
+> # all source IPs are considered for rewrites:
+> echo 0.0.0.0/0 >> /etc/jesred.acl
+>
+> i like to uncomment the line to handle rewrite logs in /etc/jesred.conf
+> just so i know it's working:
+>
+> rewrite_log = /var/log/squid/jesred-rewrite.log
+>
+> and in /etc/jesred.rules:
+>
+> regex ^http://debian.osuosl.org/debian/(.*) http://127.0.0.1:9999/debian/\1
+> regex ^http://security.us.debian.org/(.*) http://127.0.0.1:9999/debian-security/\1
+> regex ^http://security.debian.org/(.*) http://127.0.0.1:9999/debian-security/\1
+> regex ^http://backports.org/debian/(.*) http://127.0.0.1:9999/debian-backports/\1
+>
+> i'm sure you could get fancier and more effecient with regexes, but
+> that's a start, but that's a good start.
+>
+>
+> as you're well aware, there's probably more options for squid than
+> particles in the known universe, but this should cover the basics for
+> these purposes ... in /etc/squid/squid.conf:
+>
+> # enable transparent proxying
+> http_port 3128 transparent
+>
+> url_rewrite_program /usr/lib/squid/jesred
+>
+> # define who can access the proxy...
+> acl our_networks src 192.168.0.0/16
+> acl to_our_networks dst 192.168.0.0/16
+> http_access allow our_networks
+> cache deny to_our_networks
+>
+> # broad-sweeping catch-all
+> acl everything urlpath_regex .*
+> # if you'd rather get more fine-grained...
+> #acl pdiffs urlpath_regex \/Packages.diff\/.*\.gz
+> #acl debs urlpath_regex \.deb$
+> #acl udebs urlpath_regex \.udeb$
+> #acl packages urlpath_regex Packages.*$
+> #acl packages urlpath_regex Release.*$
+>
+> url_rewrite_access allow everything
+> # we just want approx to handle the caching
+> cache deny everything
+>
+> any time you make changes to /etc/jesred.* or /etc/squid/squid.conf,
+> restart squid.
+>
+>
+> for the relatively simple firewalling bits, we used ferm, but straight
+> iptables should probably work fine:
+>
+> #!/usr/bin/ferm -
+>
+> option iptables
+> option clearall
+> option createchains
+> option automod
+>
+> table nat {
+> chain PREROUTING {
+> if eth1 proto tcp saddr ! 192.168.1.16 daddr ! 192.168.0.0/16 dport 80 DNAT to 192.168.1.16:3128;
+> }
+> chain POSTROUTING {
+> of eth1 proto tcp saddr ! 192.168.1.16 daddr 192.168.1.16 dport 3128 SNAT to 192.168.1.1;
+> }
+> }
+>
+> i think this basically means anything going to port 80 from the 192.168.1.* network going to
+> anything not also on the 192.168.* gets re-routed to the proxy, unless
+> it's the proxy itself (192.168.1.16)... or something like that...
+>
+>
+> if you have trouble with it, feel free to poke me on irc or email with
+> any questions.
+>
+> live well,
+> vagrant
+
+_______________________________________________
+Staff mailing list
+Staff@lists.freegeektwincities.org
+http://lists.freegeektwincities.org/listinfo.cgi/staff-freegeektwincities.org
+
+

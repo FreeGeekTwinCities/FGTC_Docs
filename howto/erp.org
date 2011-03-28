@@ -21,3 +21,166 @@ Debian's README (which outlines creating an appropriate database/user, etc.) and
 To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its [[http://tryton-ucoa.googlecode.com/][Google Code page]].
 
 Once the files have been downloaded (either the tar.bz2 file, or via Mercurial), copy/move the entire tryton-ucoa directory into the server's module directory (e.g. /usr/local/lib/python2.6/dist-packages/trytond-1.8.2-py2.6.egg/trytond/modules), being sure to rename it to *account_ucoa*.
+
+** Installation Instructions
+    1. Install packaged dependencies for basic server:
+
+       + python-dateutil
+       + python-genshi
+       + python-relatorio (and its dependency, python-lxml)
+       + postgresql
+	 
+	 Command line: [[shell:sudo apt-get install python-dateutil python-genshi python-relatorio postgresql]]
+
+    2. Install python distutils (includes "easy_install")
+       
+         Command line: [[shell:sudo apt-get python-setuptools]]
+
+    3. Install trytond
+       
+         Command line: [[shell:sudo easy_install trytond]]
+
+    4. Install modules (optional)
+
+       Modules allow you to perform most of the functions in Tryton (e.g. tracking sales, printing invoices, entering timesheets, etc.), so you'll probably want at least /some/ of them -- a list of official modules can be obtained by searching PyPI for "tryton": [[http://pypi.python.org/pypi?%3Aaction=search&term=tryton]]
+
+       For Free Geek purposes, the most important are probably:
+
+       + trytond_sale (for tracking sales/adoptions)
+       + trytond_purchase (for tracking purchases/expenses)
+       + trytond_timesheet (for... well, timesheets!)
+
+	 Command line: [[shell:sudo easy_install trytond_sale trytond_purchase trytond_timesheet]]
+
+    5. Set up Postgres database user
+
+       Command line (from README.Debian): [[shell:sudo su - postgres -c "createuser --createdb --no-createrole --no-superuser --pwprompt tryton"]]
+
+    6. Edit /etc/trytond.conf
+
+    7. Paste the following into /etc/init.d/tryton-server (except for the BEGIN_INIT and END_INIT lines!) -- can also be downloaded directly from [[http://git.debian-maintainers.org/?p=tryton/tryton-server.git;a=blob_plain;f=debian/tryton-server.init;hb=HEAD]]
+       #+BEGIN_INIT
+       #!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:		tryton-server
+# Required-Start:	$syslog $remote_fs
+# Required-Stop:	$syslog $remote_fs
+# Should-Start:		$network
+# Should-Stop:		$network
+# Default-Start:	2 3 4 5
+# Default-Stop:		0 1 6
+# Short-Description:	Application Platform
+# Description:		Tryton is an Application Platform serving as a base for
+#			a complete ERP software.
+### END INIT INFO
+
+PATH="/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin"
+DAEMON="/usr/local/bin/trytond"
+
+test -x "${DAEMON}" || exit 0
+
+NAME="trytond"
+DESC="Tryton Application Platform"
+DAEMONUSER="tryton"
+PIDDIR="/var/run/${NAME}"
+PIDFILE="${PIDDIR}/${NAME}.pid"
+LOGFILE="/var/log/${NAME}.log"
+DEFAULTS="/etc/default/tryton-server"
+CONFIGFILE="/etc/${NAME}.conf"
+DAEMON_OPTS="--config=${CONFIGFILE} --logfile=${LOGFILE}"
+
+# Include tryton-server defaults if available
+if [ -r "${DEFAULTS}" ]
+then
+	. "${DEFAULTS}"
+fi
+
+. /lib/lsb/init-functions
+
+# Make sure trytond is started with configured locale
+if [ -n "${LANG}" ]
+then
+	LANG="${LANG}"
+	export LANG
+fi
+
+set -e
+
+do_start ()
+{
+	if [ ! -d "${PIDDIR}" ]
+	then
+		mkdir -p "${PIDDIR}"
+		chown "${DAEMONUSER}":"${DAEMONUSER}" "${PIDDIR}"
+	fi
+
+	start-stop-daemon --start --quiet --pidfile ${PIDFILE} \
+		--chuid ${DAEMONUSER} --background --make-pidfile \
+		--exec ${DAEMON} -- ${DAEMON_OPTS}
+}
+
+do_stop ()
+{
+	start-stop-daemon --stop --quiet --pidfile ${PIDFILE} --oknodo
+}
+
+case "${1}" in
+	start)
+		log_daemon_msg "Starting ${DESC}" "${NAME}"
+		do_start
+		log_end_msg ${?}
+		;;
+
+	stop)
+		log_daemon_msg "Stopping ${DESC}" "${NAME}"
+		do_stop
+		log_end_msg ${?}
+		;;
+
+	restart|force-reload)
+		log_daemon_msg "Restarting ${DESC}" "${NAME}"
+		do_stop
+		sleep 1
+		do_start
+		log_end_msg ${?}
+	;;
+
+	status)
+		status_of_proc -p ${PIDFILE} ${DAEMON} ${NAME} && \
+		exit 0 || exit ${?}
+	;;
+
+	*)
+		N="/etc/init.d/${NAME}"
+		echo "Usage: ${N} {start|stop|restart|force-reload|status}" >&2
+		exit 1
+		;;
+esac
+
+exit 0
+
+       #+END_INIT
+       
+       8. Paste the following into /etc/defaults/tryton-server (from [[http://git.debian-maintainers.org/?p=tryton/tryton-server.git;a=blob_plain;f=debian/tryton-server.default;hb=HEAD]])
+	  #+BEGIN_DEFAULTS
+	  # Defaults for trytond initscript
+# Specify the user name (Default: tryton).
+DAEMONUSER="tryton"
+
+# Specify an alternate config file (Default: /etc/trytond.conf).
+CONFIGFILE="/etc/trytond.conf"
+
+# Specify the log file (Default: /var/log/trytond.log).
+LOGFILE="/var/log/trytond.log"
+
+# Specify the verbosity of the server log (-v) (Default: not set).
+#VERBOSE="-v"
+
+# Specify the locale for the server to run (Default: en_US).
+#LANG="de_DE.UTF-8"
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS="${VERBOSE} --config=${CONFIGFILE} --logfile=${LOGFILE}"
+	  #+END_DEFAULTS
+

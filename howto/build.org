@@ -35,7 +35,7 @@
 ***** drives are detected
 ***** booting from optical disc is enabled
 **** exit BIOS, saving any changes
-*** insert Ubuntu CD-ROM (10.04.1?)
+*** insert Ubuntu CD-ROM (10.04.2, or latest 10.04 available)
 **** run Memtest
 **** if prompted, hit F4 and choose “OEM installation” (if not, install '''oem-config-gtk''' later and run '''Prepare for End User''' or '''oem-config-prepare''')
 ***** use entire disk
@@ -44,4 +44,4 @@
 **** reboot & verify that everything looks OK
 **** download & install available updates
 **** if install has issues, reboot to CD and run '''verify'''
-
+**** "Prepare for shipping" (see OEM install above)

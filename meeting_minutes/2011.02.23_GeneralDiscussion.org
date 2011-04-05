@@ -1,0 +1,19 @@
++ Need clearer demarcation between "ready for build" and "built" -- some machines seem to be "churned" through and re-built (unnecessarily)?
++ Move "problem" computers to beginning of bench, run through POST, etc.
++ For building, we need (and need to test)
+     - Video
+     - Keyboards
+     - Mice
+     - NICs
+     - Memory
+     - Hard Drives
+     - Power Supplies
++ Owen/Ben having builds/testing on Sundays; 1-6 PM? Starting <2011-03-06 Sun>? Send notice/post to website?
++ Laptops
+     - P3s: must be working, and have network (good for e.g. thin clients)
+     - P4s: we'll do some troubleshooting
+     - After 24 hours can get desktop *or* voucher for value of desktop?
++ Retention
+     - Continuing incentives (discounts?) for ongoing volunteers
+     - Need ongoing activity (8-10 hours per quarter?) to maintain discount
+     - Cap on discounted purchases per quarter/year may be helpful ($200?)

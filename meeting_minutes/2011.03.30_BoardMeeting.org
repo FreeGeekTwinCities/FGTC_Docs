@@ -1,0 +1,44 @@
+* Present:
+  + Ben 
+  + Jeff Wechter
+  + Cynthia Matthias
+  + Andy Berhow
+  + Peter Scheie
+  + Brian Dunnette
+* Minutes:
+** Space Brainstorming
+*** Requirements
+    + >2000-3000 sf.
+    + minimally finished
+    + commercially zoned
+    + access to transit
+*** Locations
+**** Hiawatha Ave. corridor
+**** 38th & Chicago
+**** 38th & Park
+**** CAN-DO/Sabathani
+**** Hack Factory (Seward) area
+**** University Ave. (Leonardo's Basement)
+****** TODO Brian will contact Bricolage reps
+** Garage Sale 
+   SCHEDULED: <2011-05-07 Sat>
+*** TODO Advertise ("table") at May Day
+*** TODO Wipe and sell iMacs "as-is"
+*** TODO Prepare desirable hardware:
+    + Routers (tested?)
+    + LCD Monitors (sell those without power cheap?)
+    + Systems (QAed)
+    + Speakers
+    + MFDs (tested)
+    + Digital picture frames
+    + Hard Drives?
+** Accepting hardware off-site (ConVergence?)
+   May be problematic logistically:
+   + Need truck
+   + May be huge amount of hardware
+   Verdict: Keep on agenda for 2012
+** Volunteer management
+   + Have new volunteers sign up for time slot (e.g. 1-3) for build?
+   + Encourage new volunteers to "shadow" builder who's further along
+   + Give outline/key points to "build captains" to help make training more uniform
+

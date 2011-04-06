@@ -6,18 +6,58 @@ The server component runs on a Dell PowerEdge server (located in the "server clo
 For clients (those who simply want to connect to the server), you can simply install Debian's tryton-client_1.8 package: [[http://mirror.cs.umn.edu/debian/pool/main/t/tryton-client/tryton-client_1.8.1-1_all.deb][http://mirror.cs.umn.edu/debian/pool/main/t/tryton-client/tryton-client_1.8.1-1_all.deb]] 
 
 * Setup
-** Server Configuration						     :ATTACH:
-  :PROPERTIES:
-  :Attachments: tryton-server.README.Debian tryton-server.init
-  :ID:       7e068630-1584-4728-86b1-bbc1ee442e90
-  :END:
-Tryton relies on a PostgreSQL database, so you need to add a relevant user (e.g. "tryton") and password; this user will also need the ability to create databases.
+** <<Tryton Installation>>					     :ATTACH:
+   :PROPERTIES:
+   :Attachments: trytond.conf tryton-server.init tryton-server.default
+   :ID:       EA686A94-B4C1-4E62-851A-6CFF6DFE71A2
+   :END:					     
+   1. Install packaged dependencies for basic server:
 
-For more specific server setup guides, check: http://code.google.com/p/tryton/wiki/InstallationOnDebian
+      + python-dateutil
+      + python-vatnumber
+      + python-genshi (for report templates)
+      + python-relatorio (and its dependency, python-lxml)
+      + python-psycopg2 (for connecting to Postgres database)
+      + postgresql (if you didn't install it initially!)
+	
+	Command line: =sudo apt-get install python-dateutil python-genshi python-relatorio python-psycopg2 python-vatnumber postgresql=
 
-Debian's README (which outlines creating an appropriate database/user, etc.) and init script are attached.
+   2. Install python distutils (includes "easy_install")
+      
+	Command line: =sudo apt-get install python-setuptools=
 
-** Server Modules
-To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its [[http://tryton-ucoa.googlecode.com/][Google Code page]].
+   3. Install trytond
+      
+	Command line: =sudo easy_install trytond=
 
-Once the files have been downloaded (either the tar.bz2 file, or via Mercurial), copy/move the entire tryton-ucoa directory into the server's module directory (e.g. /usr/local/lib/python2.6/dist-packages/trytond-1.8.2-py2.6.egg/trytond/modules), being sure to rename it to *account_ucoa*.
+   4. Install modules (optional)
+
+      Modules allow you to perform most of the functions in Tryton (e.g. tracking sales, printing invoices, entering timesheets, etc.), so you'll probably want at least /some/ of them -- a list of official modules can be obtained by searching PyPI for "tryton": [[http://pypi.python.org/pypi?%3Aaction=search&term=tryton]]
+
+      For Free Geek purposes, the most important are probably:
+
+      + *trytond-sale* (for tracking sales/adoptions)
+      + *trytond-purchase* (for tracking purchases/expenses)
+      + *trytond-timesheet* (for... well, timesheets!)
+      + *trytond-account-ucoa* (our own module for tracking accounts in a way that /should/ ease IRS 990 filings - available from http://tryton-ucoa.googlecode.com)
+
+	Command line: =sudo easy_install trytond_sale trytond_purchase trytond_timesheet=
+
+
+   5. Set up Postgres database user -- use [[http://www.pgadmin.org/][pgAdmin]] GUI to create user with createdb permissions, or...
+
+      Command line (from README.Debian): =sudo su - postgres -c "createuser --createdb --no-createrole --no-superuser --pwprompt tryton"=
+
+   6. Edit /etc/trytond.conf -- default one is attached, or available from [[http://hg2.tryton.org/1.8/trytond/raw-file/default/etc/trytond.conf]]
+
+   7. Copy attached tryton-server.init to /etc/init/tryton-server.d -- default file can be downloaded directly from [[http://git.debian-maintainers.org/?p=tryton/tryton-server.git;a=blob_plain;f=debian/tryton-server.init;hb=HEAD]]
+   
+   8. Copy attached tryton-server.default to /etc/defaults/tryton-server (from [[http://git.debian-maintainers.org/?p=tryton/tryton-server.git;a=blob_plain;f=debian/tryton-server.default;hb=HEAD]])
+
+   9. Try starting your server -- either do [[shell:sudo trytond]] (better for troubleshooting) or just [[shell:sudo /etc/init.d/tryton-server start]] if you're feeling confident!
+      
+      If all goes well, you should see your modules getting registered, followed by:
+      
+	=INFO:server:starting NetRPC protocol, port 8070=
+      
+	=INFO:server:waiting for connections...=

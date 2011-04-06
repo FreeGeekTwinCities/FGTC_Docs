@@ -1,0 +1,19 @@
+# Defaults for trytond initscript
+
+# Specify the user name (Default: tryton).
+DAEMONUSER="tryton"
+
+# Specify an alternate config file (Default: /etc/trytond.conf).
+CONFIGFILE="/etc/trytond.conf"
+
+# Specify the log file (Default: /var/log/trytond.log).
+LOGFILE="/var/log/trytond.log"
+
+# Specify the verbosity of the server log (-v) (Default: not set).
+#VERBOSE="-v"
+
+# Specify the locale for the server to run (Default: en_US).
+#LANG="de_DE.UTF-8"
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS="$VERBOSE --config=$CONFIGFILE --logfile=$LOGFILE"

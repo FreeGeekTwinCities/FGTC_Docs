@@ -14,6 +14,7 @@ parser.add_option('-t', "--tryton-version", dest="tryton_version", default="1.8"
 base_url = options.mirror + "/pool/main/t"
 tryton_dirs=[]
 tryton_debs=[]
+wget_file = open("wget-tryton-debs", "w")
 
 class DirParser(HTMLParser):
     def __init__(self, url): 
@@ -38,8 +39,9 @@ class FileParser(HTMLParser):
             link = attrs[0][1]
             if (link.find(options.tryton_version) >= 0) and (link.rfind(".deb") == (len(link)-4)):
                 print "Found package %s, downloading..." % link
-                deb_file = open(link, "w")
-                urlretrieve(fullurl + link)
+                fileurl = fullurl + link
+                wget_file.write(fileurl + "\n")
+                urlretrieve(fileurl, link)
 
 DirParser(base_url)
 

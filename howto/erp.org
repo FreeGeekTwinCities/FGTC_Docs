@@ -8,8 +8,8 @@ For clients (those who simply want to connect to the server), you can simply ins
 * Setup
 ** Server Configuration						     :ATTACH:
   :PROPERTIES:
-  :Attachments: tryton-server.README.Debian tryton-server.init
   :ID:       7e068630-1584-4728-86b1-bbc1ee442e90
+  :Attachments: trytond.conf tryton-server.init tryton-server.default tryton-server.README.Debian
   :END:
 Tryton relies on a PostgreSQL database, so you need to add a relevant user (e.g. "tryton") and password; this user will also need the ability to create databases.
 
@@ -18,9 +18,9 @@ For more specific server setup guides, check: http://code.google.com/p/tryton/wi
 Debian's README (which outlines creating an appropriate database/user, etc.) and init script are attached.
 
 ** Server Modules
-To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its [[http://tryton-ucoa.googlecode.com/][Google Code page]].
+   To help us track finances in line with IRS and other regulations, we'll be using the Urban Institute's Unified Chart of Accounts ([[http://nccs.urban.org/projects/ucoa.cfm][UCOA]]); we've created a Tryton module to implement this Chart of Accounts, which can be downloaded from its [[http://tryton-ucoa.googlecode.com/][Google Code page]].
 
-Once the files have been downloaded (either the tar.bz2 file, or via Mercurial), copy/move the entire tryton-ucoa directory into the server's module directory (e.g. /usr/local/lib/python2.6/dist-packages/trytond-1.8.2-py2.6.egg/trytond/modules), being sure to rename it to *account_ucoa*.
+   Once the files have been downloaded (either the tar.bz2 file, or via Mercurial), copy/move the entire tryton-ucoa directory into the server's module directory (e.g. /usr/local/lib/python2.6/dist-packages/trytond-1.8.2-py2.6.egg/trytond/modules), being sure to rename it to *account_ucoa*.
 
 ** Installation Instructions
     1. Install packaged dependencies for basic server:
@@ -56,7 +56,7 @@ Once the files have been downloaded (either the tar.bz2 file, or via Mercurial),
 
        Command line (from README.Debian): [[shell:sudo su - postgres -c "createuser --createdb --no-createrole --no-superuser --pwprompt tryton"]]
 
-    6. Edit /etc/trytond.conf
+    6. Edit /etc/trytond.conf (default file can be downloaded from http://hg2.tryton.org/1.8/trytond/raw-file/tip/etc/trytond.conf)
 
     7. Paste the following into /etc/init.d/tryton-server (except for the BEGIN_INIT and END_INIT lines!) -- can also be downloaded directly from [[http://git.debian-maintainers.org/?p=tryton/tryton-server.git;a=blob_plain;f=debian/tryton-server.init;hb=HEAD]]
        #+BEGIN_INIT

@@ -1,0 +1,31 @@
+* Present:
+Jeff Wechter, Peter Scheie, Ben Stumpf, Andy Berhow, Brian Dunnette, Owen Jones
+* Minutes:
+** Moving
+*** New Space Layout
+    + Want to separate build from tear-down?
+    + Intake toward front, by desk?
+    + Teardown contained in room (meeting room?)
+      + Benches/tables around outside, boxes in center?
+      + Store teardown hardware under counters?
+      + Shelving/small boxes for wires, circuit boards, etc.
+*** Where Does It Go?
+    + Try to get "furniture" near where it will be going
+      + Teardown tables (white/blue) in "meeting room"
+      + Testing benches (with upper monitor shelf) in testing room (back office?)
+      + Shelves in build (main) room?
+    + Put components where they go, otherwise in main room?
+    + Recycling: straight to garage?
+** Garage Sale
+*** Pricing
+    | Item                         | Suggested Price |
+    |------------------------------+-----------------|
+    | Standard (Pentium 4) GeekBox | $40             |
+    | LCD (17")                    | $50             |
+    | LCD (19")                    | $60             |
+    | Laptop (P4, with WiFi)       | $100            |
+    | Laptop (P4, no WiFi)         | $80             |
+    | Laptop (Pentium 3, no WiFi)  | $40             |
+    | WiFi PC Card                 | $10             |
+    | CRTs                         | free            |
+    | Books & Magazines            | free            |

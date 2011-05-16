@@ -1,0 +1,23 @@
+* Present:
+Jeff Wechter, Peter Scheie, Ben Stumpf, Andy Berhow, Brian Dunnette
+* Minutes:
+** Recycling drop-off
+   | Vendor | Material        | Amount  | Credit/Debit |
+   |--------+-----------------+---------+--------------|
+   | WM     | Plastics        | 212 lb. | 0            |
+   | WM     | Displays        | 146 lb. | -            |
+   | WM     | Laptops         | 98 lb.  | +            |
+   | WM     | Circuit Boards  | 74 lb.  | +            |
+   | WM     | Optical Drives  | 70 lb.  | 0            |
+   | WM     | Mixed Recycling | 49 lb.  | -            |
+   | LB     | Wire            | 24 lb.  | +            |
+   | WM     | Hard Drives     | 22 lb.  | +            |
+   | WM     | Power Supplies  | 16 lb.  |              |
+** Prospective Spaces
+   + Per [[mailto:eddie@redesigninc.org][Eddie]] @ [[http://redesigninc.wordpress.com/][Seward Redesign]]: Franklin Ave. space likely out of our price range (once "triple net", shared costs, etc.)
+   + Sisters' Camelot not zoned for (public) occupancy, so unsuitable for us (couldn't have volunteers)
+   + No timeline for 816 space
+   Other Prospects:
+   + 
+** Laser Recycling
+   + IOT Inc. may want whole LaserWriters and/or toner cartridges for remanufacturing

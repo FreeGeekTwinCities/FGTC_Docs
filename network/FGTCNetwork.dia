@@ -279,14 +279,14 @@ PW: foodshare#</dia:string>
         <dia:point val="12,10.2"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="12,9.605;18.8525,11.9525"/>
+        <dia:rectangle val="12,9.58631;19.0187,11.9899"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
           <dia:attribute name="string">
             <dia:string>#USI router
 IP: 192.168.30.1
-(mounted to window)#</dia:string>
+(mounted to flagpole)#</dia:string>
           </dia:attribute>
           <dia:attribute name="font">
             <dia:font family="sans" style="0" name="Helvetica"/>

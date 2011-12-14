@@ -5,7 +5,8 @@ It's a place to store documents for Free Geek Twin Cities -- primarily work-in-p
   2. Ask someone with admin access (as of March 2011, that'd be [[mailto:brian@freegeektwincities.org][Brian]]) to give you permissions
 
 Then, either do things the easy, automated way:
-  3. Install SparkleShare (sudo apt-get install sparkleshare)
+  3a. If you're using a version of Ubuntu prior to 12.04 (including our standard, 10.04), add the sparkleshare ppa: sudo add-apt-repository ppa:warp10/sparkleshare
+  3b. Install SparkleShare (sudo apt-get install sparkleshare)
   4. Add FreeGeekTwinCities/FGTC_Docs as a remote folder
 
 Or the command-line way:

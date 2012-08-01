@@ -3,6 +3,13 @@ It's a place to store documents for Free Geek Twin Cities -- primarily work-in-p
 * How to contribute
   1. Get a GitHub account: [[https://github.com/signup/free]]
   2. Ask someone with admin access (as of March 2011, that'd be [[mailto:brian@freegeektwincities.org][Brian]]) to give you permissions
+
+Then, either do things the easy, automated way:
+  3. If you're using a version of Ubuntu prior to 12.04 (including our standard, 10.04), add the sparkleshare ppa: sudo add-apt-repository ppa:warp10/sparkleshare
+  4. Install SparkleShare (sudo apt-get install sparkleshare)
+  5. Add FreeGeekTwinCities/FGTC_Docs as a remote folder
+
+Or the command-line way:
   3. Check out a copy of the docs (e.g. [[shell:git%20clone%20git@github.com:FreeGeekTwinCities/FGTC_Docs.git][shell:git clone git@github.com:FreeGeekTwinCities/FGTC_Docs.git]])
   4. Make your changes (since much of the documents are in org-mode format, you'll get some extra assistance by editing with it installed -- [[shell:apt-get%20install%20org-mode][shell:apt-get install org-mode]] in Ubuntu or Debian)
   5. Commit & push (for more help using git, try [[http://www.kernel.org/pub/software/scm/git/docs/everyday.html][Everyday Git]] or [[http://hoth.entp.com/output/git_for_designers.html][Git for Designers]])

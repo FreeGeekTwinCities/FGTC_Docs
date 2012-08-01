@@ -7,7 +7,7 @@ debug=False
 
 parser = optparse.OptionParser(description='Grab the latest Tryton packages from Debian.')
 parser.add_option('-m', "--mirror", dest="mirror", default="http://ftp.us.debian.org/debian/", help='specify a mirror other than ftp.us.debian.org')
-parser.add_option('-t', "--tryton-version", dest="tryton_version", default="1.8", help='specify a Tryton version other than 1.8')
+parser.add_option('-t', "--tryton-version", dest="tryton_version", default="2.0", help='specify a Tryton version other than 2.0')
 
 (options, args) = parser.parse_args()
 
